@@ -1,4 +1,4 @@
-const CACHE_NAME = 'find-pom-v1';
+const CACHE_NAME = 'find-pom-v2';
 const ASSETS = [
   './',
   './index.html',
