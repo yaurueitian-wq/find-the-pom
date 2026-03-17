@@ -717,16 +717,16 @@
   <div id="startScreen" class="screen active">
     <div class="start-card">
       <div class="game-logo">🐾</div>
-      <h1 class="game-title">找到<span>博美犬</span>！</h1>
-      <p class="game-subtitle">在複雜的圖片中，找到那隻藏起來的博美！</p>
+      <h1 class="game-title">找到<span>薯哥</span>！</h1>
+      <p class="game-subtitle">在複雜的圖片中，找到那隻藏起來的薯哥！</p>
       <div class="rules">
         <h3>📋 遊戲規則</h3>
         <ul>
           <li>共有 10 關，難度越來越高</li>
           <li>每關限時 60 秒</li>
           <li>時間到自動進入下一關</li>
-          <li>找到博美犬得分，剩餘時間越多分越高</li>
-          <li>博美越藏越隱蔽，眼力要好！</li>
+          <li>找到薯哥得分，剩餘時間越多分越高</li>
+          <li>薯哥越藏越隱蔽，眼力要好！</li>
         </ul>
       </div>
       <button class="btn-start" id="btnStart" onclick="startGame()">開始遊戲 🐕</button>
@@ -1023,7 +1023,7 @@
       levelDone = true;
       levelScores.push({ level: currentLevel + 1, pts: 0, found: false });
 
-      showLevelMsg('⏰', '時間到！', `博美躲過去了... 下一關！`);
+      showLevelMsg('⏰', '時間到！', `薯哥躲過去了... 下一關！`);
 
       setTimeout(() => {
         hideLevelMsg();
@@ -1218,10 +1218,10 @@
 
       // Rank
       let rank, trophy;
-      if (score >= 1500) { rank = '🏆 博美偵探大師！你的眼力無敵！'; trophy = '🏆'; }
-      else if (score >= 1000) { rank = '🥈 博美搜尋高手，表現超棒！'; trophy = '🥈'; }
-      else if (score >= 500) { rank = '🥉 博美發現者，繼續加油！'; trophy = '🥉'; }
-      else { rank = '🐾 博美藏起來，下次再試！'; trophy = '🐾'; }
+      if (score >= 1500) { rank = '🏆 薯哥偵探大師！你的眼力無敵！'; trophy = '🏆'; }
+      else if (score >= 1000) { rank = '🥈 薯哥搜尋高手，表現超棒！'; trophy = '🥈'; }
+      else if (score >= 500) { rank = '🥉 薯哥發現者，繼續加油！'; trophy = '🥉'; }
+      else { rank = '🐾 薯哥藏起來了，下次再試！'; trophy = '🐾'; }
 
       document.getElementById('trophyIcon').textContent = trophy;
       document.getElementById('rankMsg').textContent = rank;
